@@ -22,4 +22,4 @@ class MathRequest:
         self.res = value
 
     def to_string(self):
-        raise NotImplementedError
+        return f'{self.ope1} {self.operator} {self.ope2} = {self.res}'
