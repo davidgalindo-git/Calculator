@@ -2,9 +2,10 @@ class MathLib:
 
     @classmethod
     def execute(cls, math_request):
-        ope1= math_request.get_ope1()
+        ope1 = math_request.get_ope1()
         operator = math_request.get_operator()
         ope2 = math_request.get_ope2()
+        res = math_request.set_res()
 
         match operator:
             case 'add':
