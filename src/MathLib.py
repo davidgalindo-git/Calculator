@@ -9,7 +9,7 @@ class MathLib:
 
         match operator:
             case 'add':
-                raise NotImplementedError
+                ope1 + ope2 = res
             case 'sub':
                 raise NotImplementedError
             case 'mul':
