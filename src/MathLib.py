@@ -8,22 +8,17 @@ class MathLib:
 
         match operator:
             case 'add':
-                res = math_request.set_res(ope1 + ope2)
-                return res
+                math_request.set_res(ope1 + ope2)
             case 'sub':
-                res = math_request.set_res(ope1 - ope2)
-                return res
+                math_request.set_res(ope1 - ope2)
             case 'mul':
-                res = math_request.set_res(ope1 * ope2)
-                return res
+                math_request.set_res(ope1 * ope2)
             case 'div':
-                res = math_request.set_res(ope1 / ope2)
-                return res
+                math_request.set_res(ope1 / ope2)
             case 'pow':
-                res = math_request.set_res(ope1 ** ope2)
-                return res
+                math_request.set_res(ope1 ** ope2)
             case 'root':
-                res = math_request.set_res(MathLib.__root(ope1, ope2))
+                math_request.set_res(MathLib.__root(ope1, ope2))
             case _:
                 raise OperatorNotSupportedException
 
