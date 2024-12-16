@@ -19,7 +19,7 @@ class MathRequest:
         raise NotImplementedError
 
     def set_res(self, value):
-        raise NotImplementedError
+        self.res = value
 
     def to_string(self):
         raise NotImplementedError
