@@ -24,7 +24,7 @@ class MathLib:
             case 'root':
                 raise NotImplementedError
             case _:
-                raise NotImplementedError
+                raise OperatorNotSupportedException
 
     @staticmethod
     def __root(ope1, ope2):
