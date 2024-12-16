@@ -5,11 +5,10 @@ class MathLib:
         ope1 = math_request.get_ope1()
         operator = math_request.get_operator()
         ope2 = math_request.get_ope2()
-        res = math_request.set_res(None)
 
         match operator:
             case 'add':
-                res = ope1 + ope2
+                res = math_request.set_res(ope1 + ope2)
                 return res
             case 'sub':
                 raise NotImplementedError
