@@ -16,7 +16,7 @@ class MathRequest:
         return self.ope2
 
     def get_res(self):
-        raise NotImplementedError
+        return self.res
 
     def set_res(self, value):
         self.res = value
