@@ -23,7 +23,7 @@ class MathLib:
                 res = math_request.set_res(ope1 ** ope2)
                 return res
             case 'root':
-                raise NotImplementedError
+                res = math_request.set_res(MathLib.__root(ope1, ope2))
             case _:
                 raise OperatorNotSupportedException
 
