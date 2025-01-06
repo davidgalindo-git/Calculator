@@ -24,8 +24,7 @@ class MathLib:
 
     @staticmethod
     def __root(ope1, ope2):
-        res = ope1 ** (1/ope2)
-        return round(res, 2)
+        return round(ope1 ** (1/ope2), 2)
 
 class MathLibException(Exception):
     pass
